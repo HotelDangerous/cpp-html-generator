@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/cpp-html-generator.dir/src/main.cpp.o" "CMakeFiles/cpp-html-generator.dir/src/cpp_html_generator/Document.cpp.o" -o cpp-html-generator 
