@@ -1,0 +1,3 @@
+/home/keenan/Projects/web/cpp-html-generator/build/CMakeFiles/cpp-html-generator.dir
+/home/keenan/Projects/web/cpp-html-generator/build/CMakeFiles/edit_cache.dir
+/home/keenan/Projects/web/cpp-html-generator/build/CMakeFiles/rebuild_cache.dir
