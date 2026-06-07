@@ -12,6 +12,11 @@ void Document::push_back(const std::string& html)
   contents_.push_back(html);
 }
 
+void Document::push_back(const std::unique_ptr<HTMLElement>& element)
+{
+  contents_.push_back(element->render());
+}
+
 // Each Document is represented by a header, footer, and vector of Blocks. When we 
 // create a document, we return a string that composes our HTML document. The string 
 // will always start with the document_head and end with the document_tail. Anything

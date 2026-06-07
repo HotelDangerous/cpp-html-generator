@@ -1,5 +1,8 @@
 #pragma once
 
+#include "cpp_html_generator/HTMLElement.hpp"
+
+#include <memory>
 #include <string>
 #include <vector>
 
@@ -9,6 +12,7 @@ class Document
 
     // Add the HTML, represented by the block, to the end of the document
     void push_back(const std::string& html);
+    void push_back(const std::unique_ptr<HTMLElement>& element);
 
     // Return the complete contents of the HTML document that this object 
     // describes as a string 
@@ -21,10 +25,10 @@ class Document
   private:
     // Every document begins with the same set of HTML tags
     std::string document_head_ = 
-      "<!DOCTYPE HTML>\n"
+      "<!DOCTYPE html>\n"
       "<html>\n"
       "<head>\n"
-      " <meta charset=utf-8\n"
+      " <meta charset=\"utf-8>\"\n"
       " <title>Generated Document</title>\n"
       "</head>\n"
       "<body>\n";
